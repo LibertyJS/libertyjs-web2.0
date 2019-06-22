@@ -237,6 +237,7 @@
       }
 
       _generateSpeakers(speakers) {
+        // console.log(speakers, this);
         const filteredSpeakers = this.speakers
           .filter((speaker) => speaker.featured);
         this.set('featuredSpeakers', this.randomOrder(filteredSpeakers).slice(0, 4));
