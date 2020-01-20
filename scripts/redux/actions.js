@@ -233,34 +233,39 @@ const blogActions = {
     dispatch({
       type: FETCH_BLOG_LIST,
     });
+    const blogPromise = new Promise(function (resolve) {
+      fetch('data/posts/blog.json')
+          .then(function (response) {
+          return response.json();
+          })
+          .then(function (res) {
+            let blogsRaw = res;
+            resolve(blogsRaw);
+          });
+    });
+    return Promise.all([blogPromise]).then((blogsRaw) => {
+      const list = blogsRaw[0].posts;
 
-    firebase.firestore()
-      .collection('blog')
-      .orderBy('published', 'desc')
-      .get()
-      .then((snaps) => {
-        const list = snaps.docs
-          .map((snap) => Object.assign({}, snap.data(), { id: snap.id }));
 
-        const obj = list.reduce(
-          (acc, curr) => Object.assign({}, acc, { [curr.id]: curr }),
-          {}
-        );
+      const obj = list.reduce(
+        (acc, curr) => Object.assign({}, acc, { [curr.id]: curr }),
+        {}
+      );
 
-        dispatch({
-          type: FETCH_BLOG_LIST_SUCCESS,
-          payload: {
-            obj,
-            list,
-          },
-        });
-      })
-      .catch((error) => {
-        dispatch({
-          type: FETCH_BLOG_LIST_FAILURE,
-          payload: { error },
-        });
+      dispatch({
+        type: FETCH_BLOG_LIST_SUCCESS,
+        payload: {
+          obj,
+          list,
+        },
       });
+    })
+    .catch((error) => {
+      dispatch({
+        type: FETCH_BLOG_LIST_FAILURE,
+        payload: { error },
+      });
+    });
   },
 };
 
