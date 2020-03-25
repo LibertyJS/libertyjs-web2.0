@@ -527,6 +527,11 @@ const scheduleActions = {
       type: FETCH_SCHEDULE,
     });
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const conferenceYear = urlParams.get('year');
+
+    console.log(conferenceYear)
+
     const schedulePromise = new Promise(function (resolve) {
       fetch('data/posts/schedule.json')
         .then(function (response) {
