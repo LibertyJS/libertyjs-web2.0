@@ -293,16 +293,7 @@ const speakersActions = {
       type: FETCH_SPEAKERS,
     });
 
-    const schedulePromise = new Promise(function (resolve) {
-      fetch('data/posts/schedule.json')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (res) {
-          let scheduleRaw = res.schedule;
-          resolve(scheduleRaw);
-        });
-    });
+    const schedulePromise = getScheduleJSON()
 
     const speakersPromise = new Promise(function (resolve) {
       fetch('data/posts/speakers.json')
@@ -391,16 +382,7 @@ const sessionsActions = {
       type: FETCH_SESSIONS,
     });
 
-    const schedulePromise = new Promise(function (resolve) {
-      fetch('data/posts/schedule.json')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (res) {
-          let scheduleRaw = res.schedule;
-          resolve(scheduleRaw);
-        });
-    });
+    const schedulePromise = getScheduleJSON();
 
     const speakersPromise = new Promise(function (resolve) {
       fetch('data/posts/speakers.json')
@@ -520,6 +502,25 @@ const sessionsActions = {
   },
 };
 
+function getScheduleJSON() {
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const conferenceYear = urlParams.get('year');
+  let jsonYear = conferenceYear ? '-' + conferenceYear : '';
+  const schedulePromise = new Promise(function (resolve) {
+    fetch('data/posts/schedule' + jsonYear + '.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (res) {
+        let scheduleRaw = res.schedule;
+        resolve(scheduleRaw);
+      });
+  });
+
+  return schedulePromise;
+}
+
 const scheduleActions = {
 
   fetchSchedule: () => (dispatch) => {
@@ -527,21 +528,8 @@ const scheduleActions = {
       type: FETCH_SCHEDULE,
     });
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const conferenceYear = urlParams.get('year');
 
-    console.log(conferenceYear)
-
-    const schedulePromise = new Promise(function (resolve) {
-      fetch('data/posts/schedule.json')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (res) {
-          let scheduleRaw = res.schedule;
-          resolve(scheduleRaw);
-        });
-    });
+    const schedulePromise = getScheduleJSON()
 
     const speakersPromise = new Promise(function (resolve) {
       fetch('data/posts/speakers.json')
@@ -572,6 +560,8 @@ const scheduleActions = {
         let arr = sessionsSpeakersScheduleMap(sessionsRaw, speakersRaw, scheduleRaw);
 
         let schedule = arr.schedule;
+
+        console.log("all the promises")
 
         dispatch({
           type: FETCH_SCHEDULE_SUCCESS,

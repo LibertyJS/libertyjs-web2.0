@@ -1,85 +1,106 @@
 {
-  "schedule" :
-  [
+  "schedule": [
     {
-      "date": "2019-10-24",
-      "dateReadable": "Thursday, October 24th",
-      "timeslots" : [
+      "date": "2020-10-24",
+      "dateReadable": "asdf, October 24th",
+      "timeslots": [
         {
-          "startTime" : "08:30",
-          "endTime" : "09:30",
-          "sessions" : [ {
-            "items" : [ "1024Breakfast" ]
-          } ]
-
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "sessions": [
+            {
+              "items": [
+                "1024Breakfast"
+              ]
+            }
+          ]
         },
         {
-          "startTime" : "09:30",
-          "endTime" : "09:40",
-          "sessions" : [ {
-            "items" : [ "openingRemarks" ]
-          } ]
-
+          "startTime": "09:30",
+          "endTime": "09:40",
+          "sessions": [
+            {
+              "items": [
+                "openingRemarks"
+              ]
+            }
+          ]
         },
         {
-          "startTime" : "09:50",
-          "endTime" : "10:30",
-          "sessions" : [
+          "startTime": "09:50",
+          "endTime": "10:30",
+          "sessions": [
             {
-              "items" : [ "webAssembly" ]
+              "items": [
+                "webAssembly"
+              ]
             },
             {
-              "items": ["refactorClassComponent"]
+              "items": [
+                "refactorClassComponent"
+              ]
             },
             {
-              "items": ["webVR"],
+              "items": [
+                "webVR"
+              ],
               "extend": 2
             }
           ]
         },
         {
-          "startTime" : "10:40",
-          "endTime" : "11:20",
-          "sessions" : [
+          "startTime": "10:40",
+          "endTime": "11:20",
+          "sessions": [
             {
-              "items" : [ "lerna" ]
+              "items": [
+                "lerna"
+              ]
             },
             {
-              "items": ["uiComponentTesting"]
+              "items": [
+                "uiComponentTesting"
+              ]
             }
           ]
         },
         {
-          "startTime" : "11:30",
-          "endTime" : "12:10",
-          "sessions" : [
+          "startTime": "11:30",
+          "endTime": "12:10",
+          "sessions": [
             {
-              "items" : [ "minorityRole" ]
+              "items": [
+                "minorityRole"
+              ]
             },
             {
-              "items": ["deploymentStrategy"]
+              "items": [
+                "deploymentStrategy"
+              ]
             }
           ]
         },
         {
-          "startTime" : "12:10",
-          "endTime" : "13:50",
-          "sessions" : [
+          "startTime": "12:10",
+          "endTime": "13:50",
+          "sessions": [
             {
-              "items" : [ "lunch" ],
-              "extend" :2,
+              "items": [
+                "lunch"
+              ],
+              "extend": 2,
               "rowSpan": 2
             }
           ]
         },
         {
-          "startTime" : "13:00",
-          "endTime" : "13:50",
-
-          "sessions" : [
-
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "sessions": [
             {
-              "items" : [ "jovo" ],
+              "items": [
+                "jovo"
+              ],
               "extend": 2,
               "startCol": 3,
               "trackNum": 3
@@ -87,142 +108,184 @@
           ]
         },
         {
-          "startTime" : "13:50",
-          "endTime" : "14:30",
-          "sessions" : [
+          "startTime": "13:50",
+          "endTime": "14:30",
+          "sessions": [
             {
-              "items" : [ "sharingComponents" ]
+              "items": [
+                "sharingComponents"
+              ]
             },
             {
-              "items": ["uniqueHowsWhys"]
+              "items": [
+                "uniqueHowsWhys"
+              ]
             }
           ]
         },
         {
-          "startTime" : "14:40",
-          "endTime" : "15:20",
-          "sessions" : [
+          "startTime": "14:40",
+          "endTime": "15:20",
+          "sessions": [
             {
-              "items" : [ "digitalAccessibility" ]
+              "items": [
+                "digitalAccessibility"
+              ]
             },
             {
-              "items": ["thinkfast"]
+              "items": [
+                "thinkfast"
+              ]
             },
             {
-              "items": ["teslaBattery"],
+              "items": [
+                "teslaBattery"
+              ],
               "extend": 2
             }
           ]
         },
         {
-          "startTime" : "15:30",
-          "endTime" : "16:10",
-          "sessions" : [
+          "startTime": "15:30",
+          "endTime": "16:10",
+          "sessions": [
             {
-              "items" : [ "mentorPlaybook" ]
+              "items": [
+                "mentorPlaybook"
+              ]
             },
             {
-              "items": ["rocketScience"]
+              "items": [
+                "rocketScience"
+              ]
             }
           ]
         },
         {
-          "startTime" : "16:20",
-          "endTime" : "17:00",
-          "sessions" : [
+          "startTime": "16:20",
+          "endTime": "17:00",
+          "sessions": [
             {
-              "items" : [ "insufficientlyPersuasive" ]
+              "items": [
+                "insufficientlyPersuasive"
+              ]
             }
           ]
         }
-
       ],
-      "tracks" : [ {
-        "title" : "Ballroom, 5th Floor"
-      }, {
-        "title" : "Dell Theatre, Concourse"
-      }, {
-        "title" : "Classroom A/B, Concourse"
-      } ]
+      "tracks": [
+        {
+          "title": "Ballroom, 5th Floor"
+        },
+        {
+          "title": "Dell Theatre, Concourse"
+        },
+        {
+          "title": "Classroom A/B, Concourse"
+        }
+      ]
     },
     {
       "date": "2019-10-25",
       "dateReadable": "Friday, October 25th",
-      "timeslots" :
-      [
+      "timeslots": [
         {
-          "endTime" : "09:30",
-          "sessions" : [ {
-            "items" : [ "1024Breakfast" ]
-          } ],
-          "startTime" : "08:30"
+          "endTime": "09:30",
+          "sessions": [
+            {
+              "items": [
+                "1024Breakfast"
+              ]
+            }
+          ],
+          "startTime": "08:30"
         },
         {
-          "startTime" : "09:30",
-          "endTime" : "09:40",
-          "sessions" : [ {
-            "items" : [ "openingRemarks" ]
-          } ]
+          "startTime": "09:30",
+          "endTime": "09:40",
+          "sessions": [
+            {
+              "items": [
+                "openingRemarks"
+              ]
+            }
+          ]
         },
         {
-          "startTime" : "09:50",
-          "endTime" : "10:30",
-          "sessions" : [
+          "startTime": "09:50",
+          "endTime": "10:30",
+          "sessions": [
             {
-              "items" : [ "machineLearning" ]
+              "items": [
+                "machineLearning"
+              ]
             },
             {
-              "items": ["webAudio"]
+              "items": [
+                "webAudio"
+              ]
             },
             {
-              "items": ["demystifyingRegularExpressions"],
+              "items": [
+                "demystifyingRegularExpressions"
+              ],
               "extend": 2
             }
           ]
         },
         {
-          "startTime" : "10:40",
-          "endTime" : "11:20",
-          "sessions" : [
+          "startTime": "10:40",
+          "endTime": "11:20",
+          "sessions": [
             {
-              "items" : [ "kickingBugs" ]
+              "items": [
+                "kickingBugs"
+              ]
             },
             {
-              "items": ["buildingAccessibility"]
+              "items": [
+                "buildingAccessibility"
+              ]
             }
           ]
         },
         {
-          "startTime" : "11:30",
-          "endTime" : "12:10",
-          "sessions" : [
+          "startTime": "11:30",
+          "endTime": "12:10",
+          "sessions": [
             {
-              "items" : [ "headlessArchitecture" ]
+              "items": [
+                "headlessArchitecture"
+              ]
             },
             {
-              "items": ["rsjxFutureAsyncProgramming"]
+              "items": [
+                "rsjxFutureAsyncProgramming"
+              ]
             }
           ]
         },
         {
-          "startTime" : "12:10",
-          "endTime" : "12:30",
-          "sessions" : [
+          "startTime": "12:10",
+          "endTime": "12:30",
+          "sessions": [
             {
-              "items" : [ "lunch" ],
-              "extend" :2,
+              "items": [
+                "lunch"
+              ],
+              "extend": 2,
               "rowSpan": 2
             }
           ]
         },
         {
-          "startTime" : "13:00",
-          "endTime" : "13:50",
-
-          "sessions" : [
-
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "sessions": [
             {
-              "items" : [ "javaScriptMidi" ],
+              "items": [
+                "javaScriptMidi"
+              ],
               "extend": 2,
               "startCol": 3,
               "trackNum": 3
@@ -230,88 +293,107 @@
           ]
         },
         {
-          "startTime" : "13:50",
-          "endTime" : "14:30",
-          "sessions" : [
+          "startTime": "13:50",
+          "endTime": "14:30",
+          "sessions": [
             {
-              "items" : [ "serverlessDevelopmentPortfolioSevenDays" ]
+              "items": [
+                "serverlessDevelopmentPortfolioSevenDays"
+              ]
             },
             {
-              "items": ["predictingtheFuture"]
+              "items": [
+                "predictingtheFuture"
+              ]
             }
           ]
         },
         {
-          "startTime" : "14:40",
-          "endTime" : "15:20",
-          "sessions" : [
+          "startTime": "14:40",
+          "endTime": "15:20",
+          "sessions": [
             {
-              "items" : [ "sacre_bleu" ]
+              "items": [
+                "sacre_bleu"
+              ]
             },
             {
-              "items": ["shinyObjectSyndrome"]
+              "items": [
+                "shinyObjectSyndrome"
+              ]
             },
             {
-              "items": ["apolloGraphQl"],
+              "items": [
+                "apolloGraphQl"
+              ],
               "extend": 2
             }
           ]
         },
         {
-          "startTime" : "15:30",
-          "endTime" : "16:10",
-          "sessions" : [
+          "startTime": "15:30",
+          "endTime": "16:10",
+          "sessions": [
             {
-              "items" : [ "iDontKnow" ]
+              "items": [
+                "iDontKnow"
+              ]
             },
             {
-              "items": ["ohMyWeb"]
+              "items": [
+                "ohMyWeb"
+              ]
             }
           ]
         },
         {
-          "startTime" : "16:20",
-          "endTime" : "17:00",
-          "sessions" : [
+          "startTime": "16:20",
+          "endTime": "17:00",
+          "sessions": [
             {
-              "items" : [ "safeSpace" ]
+              "items": [
+                "safeSpace"
+              ]
             }
           ]
         },
         {
-          "startTime" : "17:00",
-          "endTime" : "17:10",
-
-          "sessions" : [
-
+          "startTime": "17:00",
+          "endTime": "17:10",
+          "sessions": [
             {
-              "items" : [ "closingremarks" ]
+              "items": [
+                "closingremarks"
+              ]
             }
           ]
         },
         {
-          "startTime" : "17:10",
-          "endTime" : "19:00",
-
-          "sessions" : [
-
+          "startTime": "17:10",
+          "endTime": "19:00",
+          "sessions": [
             {
-              "items" : [ "afterparty" ],
+              "items": [
+                "afterparty"
+              ],
               "track": {
-                "title" : "\"Only in America\" Gallery, Main Floor"
+                "title": "\"Only in America\" Gallery, Main Floor"
               }
             }
           ]
         }
       ],
-      "tracks" : [ {
-        "title" : "Ballroom, 5th Floor"
-      }, {
-        "title" : "Dell Theatre, Concourse"
-      }, {
-        "title" : "Classroom A/B, Concourse"
-      } ]
+      "tracks": [
+        {
+          "title": "Ballroom, 5th Floor"
+        },
+        {
+          "title": "Dell Theatre, Concourse"
+        },
+        {
+          "title": "Classroom A/B, Concourse"
+        }
+      ]
     }
-
   ]
 }
